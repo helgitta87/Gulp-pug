@@ -1,0 +1,27 @@
+extends ../_extends/_head.pug
+block title
+    - var title = 'Добро пожаловать'
+block content
+    .wrapper
+        +parallax('1','2','3','4','5','6')  
+        .index__container
+            a(href='#').btn.btn_auth Авторизоваться
+            //блок поворотный
+            .c-block_flipped
+                .auth-block
+                    .auth-block__content
+                        +user('user_black','user__name','Уразлова Ольга','user__occup','Личный сайт разработчика')
+                        +socials('socials_green')
+                    ul.auth-block__nav.block-nav
+                        +bl-nav('#','Мои работы')
+                        +bl-nav('#','Обо мне')
+                        +bl-nav('#','Блог')
+                .login-block.c-block
+                    .login-block__content
+                        include ../_includes/login_form.pug
+                    ul.login-block__nav.block-nav
+                        +bl-nav('#','На главную')
+                        +bl-nav('#','Войти')    
+            .copyright @ Ольга Уразлова | создано с любовью в Lofschool | 2017
+                
+                

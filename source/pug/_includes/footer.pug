@@ -1,0 +1,22 @@
+footer.footer
+    .footer__section.footer__section_top
+        footer__left
+            ul.simple-menu 
+                +f-menu('#','Мои работы')
+                +f-menu('#','Обо мне')
+                +f-menu('#','Блог')
+                +f-menu('#','Авторизация')
+        footer__right
+            ul.round-socials
+                - var icons = [['vk','#'],['github-alt','#'],['linkedin','#']]
+                    each icon in icons
+                        li.round-socials__item
+                            a.round-socials__link(href=icon[1] target='_blank')
+                                i(class=`fa fa-${icon[0]}`)
+        footer__left
+            .about-user
+                p.
+                    Я веб-разработчик из Самары, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+        footer__right
+            .copyright.copyright_grey @ Ольга Уразлова | создано с любовью в Lofschool | 2017
+                

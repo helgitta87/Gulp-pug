@@ -1,0 +1,29 @@
+.block-title.login-title Авторизуйтесь
+form.login-form
+    .login-form__row
+        label.login-form__label
+            .login-form__icon
+                i.fa.fa-user
+            input.login-form__input(type='text' name='login' placeholder='Логин')
+    .login-form__row
+        label.login-form__label
+            .login-form__icon
+                i.fa.fa-key
+            input.login-form__input(type='password' name='password' placeholder='Пароль')
+    .login-form__row
+        label.login-form__checks
+            input.login-form__checkbox(type='checkbox' name='human' checked)
+            .login-form__pseudo_checkbox
+            .login-form__desc Я человек
+    .login-form__row
+        .login-form__question Вы точно не робот?
+        label.login-form__checks
+            input.login-form__radio(type='radio' name='robot' checked)
+            .login-form__pseudo_checkbox
+            .login-form__desc Да
+        label.login-form__checks
+            input.login-form__radio(type='radio' name='robot' checked)
+            .login-form__pseudo_checkbox
+            .login-form__desc Не уверен
+    
+    

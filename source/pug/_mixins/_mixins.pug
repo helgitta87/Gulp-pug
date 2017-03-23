@@ -1,0 +1,79 @@
+//-socials icons
+mixin socials(mod)
+    ul(class='socials' + ' ' + mod)
+        li.socials__item
+            a.socials__link(href='#' target='_blank')
+                i(class="fa fa-vk vk")
+        li.socials__item
+            a.socials__link(href='#' target='_blank')
+                i(class="fa fa-github-alt github")
+        li.socials__item
+            a.socials__link(href='#' target='_blank')
+                i(class="fa fa-linkedin linkedin")
+                
+//-user
+mixin user(mod,titleCl,title,descCl,desc)
+    ul(class='user' + ' ' + mod)
+        li.user__pic
+            img.user__img(src='img/content/user.jpg' alt='user')
+        li(class=titleCl)=title
+        li(class=descCl)=desc
+
+//-svg
+mixin icon(name,mod)
+    svg(class="icon icon-" + name + ' ' + mod)
+        use(xlink:href="img/icons/sprite.svg#" + name)
+
+//-skills
+mixin skills(title,...skills)
+    li.skills-group__item
+        .skills-group__title=title
+        ul.skills-block
+            each skill in skills
+                li.skills-block__item
+                    .skill
+                        svg.skill__circle
+                            circle(cx='50' cy='50' r='40')
+                            circle(cx='50' cy='50' r='40')
+                            .skill__title=skill
+
+//-footer-menu
+mixin f-menu(href,title)
+    li.simple-menu__item
+        a.simple-menu__link(href=href)=title
+
+//-sidebar-item
+mixin sb-item(href,title)
+    li.sidebar-nav__item
+        a.sidebar-nav__link(href=href)=title
+
+//-feedback
+mixin feedback (text,img,name,occ)
+    div.feedback
+        i.fa.fa-quote-left
+        .feedback__text
+            p=text       
+        .feedback__person
+            .feedback__person_left
+                img.feedback__img(src=img)
+            .feedback__person_right
+                .feedback__person-name=name
+                .feedback__person-occup=occ
+
+//-block-nav
+mixin bl-nav(href,title)
+    li.auth-block__item
+        a.auth-block__link(href=href) title
+        
+//-parallax
+mixin parallax(...layers)
+    each layer in layers
+        .index__bg
+            .index__bg-layer
+                img.index__bg-img(src=`img/parallax/layer-${layer}.png`)
+
+
+            
+
+
+

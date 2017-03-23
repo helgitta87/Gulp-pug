@@ -1,0 +1,13 @@
+extends ../_extends/_head.pug
+block title
+    title Блог
+block content
+    .wrapper
+        section.section.hero_blog
+            .hero__bg_blog
+                img.hero__bg-img_blog(src='img/bg/mount_bg.jpg')
+            include ../_includes/header.pug
+            .hero__container_blog
+                img.title-bg(src='img/bg/portfolio_header.svg')
+                +user('','user__name','Уразлова Ольга','user__occup','Личный сайт разработчика')
+    

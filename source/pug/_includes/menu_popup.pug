@@ -1,0 +1,10 @@
+.popup-menu
+    a.popup-menu__close(href='#')
+        svg.cross
+    nav.popup-menu__content
+        ul.popup-menu__list
+            - var titles = [['Мои работы','#'],['Блог','#'],['Обо мне','#'],['Авторизация','#']]
+                each title in titles
+                    li.popup-menu__item
+                        a.popup-menu__link.menu-title(href=title[1])=title[0]
+                            

@@ -1,0 +1,16 @@
+doctype html
+html(lang='ru-RU')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IU=edge, chrome=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(name='description' content='сайт веб-разработчика')
+        meta(name='keywords' content='сайты, лендинги, веб-разработка, верстка')
+        meta(name='author' content='Уразлова Ольга')
+        block title
+            title default
+        // styles
+        link(href='css/main.css' rel='stylesheet' type='text/css')
+        include ../_mixins/_mixins.pug
+    body
+        block content

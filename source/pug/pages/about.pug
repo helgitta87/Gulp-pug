@@ -1,0 +1,46 @@
+extends ../_extends/_head.pug
+block title
+    title Обо мне
+block content
+    .wrapper
+        include ../_includes/hero.pug
+        section.section.about
+            .about__col.about__col_left
+                svg.about_triangle(viewbox='0 0 1000 110' preserveAspectRatio='none')
+                    polygon(points='0,0 0,110 1000,110')
+                .section-title(style='background-image:src(img/bg/about_header.svg)')
+                    .main-title Обо мне
+                .about-user
+                    .about-user__pic
+                        img.about-user__img(src='img/content/user.jpg')
+                    .block-title.about-user__title Кто я
+                    .about-user__desc
+                        p.
+                            Я веб-разработчик из Самары. Занимаюсь разработкой сайтов различной сложности.
+                        p.
+                            Мне нравится делать функциональный, красивые и продуманные сайты.
+            .about__col.about__col_right
+                svg.about_triangle(viewbox='0 0 1000 110' preserveAspectRatio='none')
+                    polygon(points='0,110 1000,110 0,0')
+                .skills
+                    .block-title.skills__title Чем я могу быть вам полезна
+                    .skills__desc
+                        p.
+                            Больше всего меня привлекает Frontend разработка, но я также знакома и могу решать несложные задачи на Backend. Ниже можно познакомиться подробнее со стеком технологий, которые я использую в работе.
+                    ul.skills-group
+                        +skills('Frontend','HTML5','CSS3','Javascript & jQuery')
+                        +skills('Backend','PHP','mySQL','Node.js & npm','Mongo.db')
+                        +skills('Workflow','Git','Gulp','Bower')
+        section.section.map
+            .map__api
+                include ../_includes/contacts.pug    
+            include ../_includes/footer.pug
+    include ../_includes/menu_popup.pug
+                                        
+                                            
+                                            
+                                    
+                                
+                
+                
+            

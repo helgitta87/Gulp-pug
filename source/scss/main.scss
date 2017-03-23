@@ -1,0 +1,33 @@
+$grey:#455a64;
+$black:#373e42;
+$lightBlue:#6da3bd;
+$lightGreen:#00bfa5;
+$green:#009688;
+
+//layouts
+@import "layouts/normalize.scss";
+@import "layouts/fonts.scss";
+@import "layouts/_sprite.scss";
+@import "layouts/common.scss";
+@import "layouts/adjustments.scss";
+
+//components
+@import "components/user-info.scss";
+@import "components/login-form.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/menu.scss";
+@import "components/sidebar.scss";
+@import "components/slider.scss";
+@import "components/callback-form.scss";
+@import "components/article.scss";
+
+//sections
+@import "sections/about.scss";
+@import "sections/blog.scss";
+@import "sections/portfolio.scss";
+@import "sections/welcome.scss";
+
+
+
+
